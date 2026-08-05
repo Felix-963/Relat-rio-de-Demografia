@@ -1,0 +1,149 @@
+---
+title: "[INCLUIR TÍTULO DO RELATÓRIO E PERÍODO DE ANÁLISE DOS DADOS]"
+subtitle: "Relatório de Pesquisa — Disciplina: Demografia I"
+author:
+  - name: "[Seu Nome Completo]"
+    affil-id: 1
+    email: "discente@ufpb.br"
+    note: "Matrícula: [Sua Matrícula]"
+affiliations:
+  - id: 1
+    name: "Universidade Federal da Paraíba (UFPB)"
+    department: "Departamento de Estatística — CCEN"
+date: today
+date-format: "MMMM [de] YYYY"
+lang: pt-BR
+
+# Configurações de Formato (PDF e HTML)
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: show
+    fig-cap-location: bottom
+    tbl-cap-location: top
+  pdf:
+    documentclass: article
+    papersize: a4
+    margin-left: 3cm
+    margin-right: 2cm
+    margin-top: 3cm
+    margin-bottom: 2cm
+    fontsize: 12pt
+    linestretch: 1.5
+    toc: false
+    number-sections: true
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{indentfirst}
+        \usepackage{microtype}
+        \usepackage{caption}
+        \captionsetup{labelfont=bf}
+
+# Metadados Adicionais
+docente: "Profª. Dra. Everlane Suane de Araújo da Silva"
+curso: "Bacharelado em Estatística"
+disciplina: "Demografia I"
+local: "João Pessoa – PB"
+---
+
+::: {.content-visible when-format="html"}
+::: {style="text-align: center; margin-bottom: 2rem;"}
+![](logo_ufpb.png){width=100px}
+
+**UNIVERSIDADE FEDERAL DA PARAÍBA**  
+**CENTRO DE CIÊNCIAS EXATAS E DA NATUREZA**  
+**DEPARTAMENTO DE ESTATÍSTICA**  
+**DISCIPLINA:** Demografia I  
+**DOCENTE:** Profª. Dra. Everlane Suane de Araújo da Silva  
+**DISCENTE:** [Seu Nome Completo] — **Matrícula:** [Sua Matrícula]  
+**LOCALIDADE:** João Pessoa – PB | **DATA:** Agosto de 2026
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{titlepage}
+\begin{center}
+    \includegraphics[width=3cm]{logo_ufpb.png} \\[0.5cm]
+    {\Large \textbf{UNIVERSIDADE FEDERAL DA PARAÍBA}} \\[0.2cm]
+    {\large \textbf{CENTRO DE CIÊNCIAS EXATAS E DA NATUREZA}} \\[0.2cm]
+    {\large \textbf{DEPARTAMENTO DE ESTATÍSTICA}} \\[0.2cm]
+    {\medium \textbf{DISCIPLINA: DEMOGRAFIA I}} \\[2cm]
+
+    {\Large \textbf{[TÍTULO DO RELATÓRIO E PERÍODO DE ANÁLISE DOS DADOS]}} \\[2cm]
+
+    \begin{flushright}
+        \textbf{Docente:} Profª. Dra. Everlane Suane de Araújo da Silva \\
+        \textbf{Discente:} [Seu Nome Completo] \\
+        \textbf{Matrícula:} [Sua Matrícula]
+    \end{flushright}
+
+    \vfill
+
+    {\medium João Pessoa – PB} \\
+    {\medium Agosto, 2026}
+\end{center}
+\end{titlepage}
+:::
+
+---
+
+## RESUMO {.unnumbered}
+
+::: {.callout-note icon=false appearance="simple"}
+Apresenta de forma resumida a proposta investigativa descrita no trabalho. É elaborado de forma clara e objetiva em um único parágrafo com cerca de 250 a 300 palavras e espaçamento simples. No resumo sistematizamos as ideias principais de todas as sessões do documento (contextualização, objetivo central, abordagem metodológica, principais resultados e conclusão sintética).
+:::
+
+**Palavras-chave:** [Palavra 1], [Palavra 2], [Palavra 3]. *(Máximo 3 palavras)*
+
+---
+
+## INTRODUÇÃO {#sec-introducao}
+
+O texto da introdução deverá conter os seguintes elementos de preferência seguindo essa ordem em forma textual:
+
+1. **1º momento (Apresentação do tema):** Contextualização teórica e demográfica do objeto de estudo, destacando a relevância estatística da análise (ex.: dinâmica populacional, taxas de natalidade/mortalidade, estrutura etária no período analisado).
+2. **2º momento (Resumo dos objetivos):** Apresentação do objetivo geral e dos objetivos específicos do trabalho.
+3. **3º momento (Resumo da metodologia):** Breve síntese da abordagem metodológica e fontes de dados utilizadas (ex.: IBGE, DATASUS, SEADE).
+4. **4º momento (Estrutura do trabalho):** Descrição sucinta de como o relatório está organizado nas seções seguintes.
+
+> *Nota:* Normalmente a introdução é uma das últimas coisas que se faz em qualquer trabalho.
+
+---
+
+## PROCEDIMENTO METODOLÓGICO {#sec-metodologia}
+
+Exposição e descrição da metodologia adotada, técnicas e/ou procedimentos de análise, instrumentos, e outros itens referentes ao desenvolvimento do estudo.
+
+- **Fontes de Dados:** Identificação das bases de dados secundários ou primários utilizados.
+- **Recorte Temporal e Territorial:** Período de análise dos dados e abrangência geográfica (ex.: João Pessoa – PB, Estado da Paraíba ou Brasil).
+- **Indicadores Demográficos:** Fórmulas e conceitos dos indicadores calculados, como a Taxa Bruta de Natalidade ($TBN$) e a Razão de Dependência ($RD$):
+
+$$TBN = \frac{N}{P} \times 1000$$
+
+$$RD = \frac{P_{0-14} + P_{65+}}{P_{15-64}} \times 100$$
+
+Exemplo de bloco de código computacional em **R** para o relatório:
+
+```{r}
+#| label: tbl-dados-exemplo
+#| echo: true
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(knitr)
+
+# Exemplo de tabela de indicadores demográficos
+dados <- data.frame(
+  Ano = c(2000, 2010, 2020, 2026),
+  Populacao = c(3446994, 3766528, 4039277, 4150000),
+  TBN = c(21.4, 16.8, 13.5, 12.1),
+  Razao_Dependencia = c(62.5, 51.2, 44.8, 43.1)
+)
+
+kable(dados, col.names = c("Ano", "População Total", "TBN (por 1.000)", "Razão de Dependência (%)"), 
+      caption = "Evolução dos Indicadores Demográficos Analisados")
