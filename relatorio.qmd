@@ -1,0 +1,112 @@
+---
+title: ""
+lang: pt-BR
+format:
+  pdf:
+    documentclass: article
+    pdf-engine: pdflatex
+    geometry:
+      - margin=2.5cm
+    fontsize: 12pt
+    number-sections: true
+    toc: false
+  docx:
+    number-sections: true
+    toc: true
+---
+
+```{=latex}
+\thispagestyle{empty}
+\begin{center}
+
+\includegraphics[width=2.5cm]{logo_ufpb.png}
+
+\vspace{1cm}
+
+\textbf{UNIVERSIDADE FEDERAL DA PARAÍBA}
+
+\textbf{CENTRO DE CIÊNCIAS EXATAS E DA NATUREZA}
+
+\textbf{DEPARTAMENTO DE ESTATÍSTICA}
+
+\textbf{DISCIPLINA: DEMOGRAFIA I}
+
+\vspace{2cm}
+
+\textbf{Análise Demográfica do Estado do Maranhão: 2010-2022}
+
+\vspace{2cm}
+
+\textbf{Docente:} Everlane Suane de Araújo da Silva
+
+\textbf{Discente:} Matheus Felix de Assunção -Matrícula: 20230093474
+
+\vfill
+
+\textbf{João Pessoa -- PB}
+
+\textbf{Mês, 2026}
+
+\end{center}
+\newpage
+```
+
+```{=latex}
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+```
+
+# Análise Demográfica do Estado do Maranhão: 2010-2022 {.unnumbered}
+
+Everlane Suane A. Silva^[Docente do Departamento de Estatística da Universidade Federal da Paraíba (UFPB); Pesquisadora do Laboratório de Estudos Demográficos (LED) do Departamento de Estatística da UFPB.]
+
+Matheus Felix de Assunção^[Discente do curso de bacharelado em Estatística da UFPB.]
+
+```{=latex}
+\section*{RESUMO}
+\addcontentsline{toc}{section}{RESUMO}
+```
+
+Apresenta de forma resumida a proposta investigativa descrita **no trabalho.** É elaborado de forma clara e objetiva em um único parágrafo com cerca de 250 a 300 palavras e espaçamento simples.
+
+No resumo sistematizamos as ideias principais de todas as sessões do documento.
+
+Palavras-chave: identifique no máximo 3 palavras que resume as ideias principais tratadas no texto.
+
+# INTRODUÇÃO
+
+O texto da introdução deverá conter os seguintes elementos de preferência seguindo essa ordem em forma textual.
+
+1º momento: apresentação do tema
+
+2º momento: um resumo dos objetivos do seu trabalho
+
+3º momento: um resumo da metodologia.
+
+4º momento: como o trabalho está estruturado
+
+Normalmente a introdução é uma das últimas coisas que se faz em qualquer trabalho.
+
+# PROCEDIMENTO METODOLÓGICO
+
+Exposição e descrição da metodologia adotada, técnicas e/ou procedimentos de análise, instrumentos, e outros itens referentes ao desenvolvimento do estudo.
+
+# RESULTADOS E DISCUSSÃO
+
+Exposição e discussão, de forma objetiva, enfatizando os resultados mais relevantes, que poderão ser exemplificados por meio de gráficos, tabelas, figuras, associados a argumentações teóricas (se for o caso). As atividades desenvolvidas no período devem ser destacadas e confrontados com aquelas propostas no plano original, justificando-se, caso seja pertinente, as limitações ocorridas e/ou as alterações realizadas. As discussões devem ser situadas e fundamentadas no contexto da abordagem teórica pertinente.
+
+# CONCLUSÃO
+
+Exposição com base nos resultados obtidos, evitando-se a simples repetição do que já foi apresentado nas discussões. Na elaboração desta seção, convém retomar os objetivos de modo a evidenciar se foram ou não alcançados, apresentando os possíveis desdobramentos do estudo.
+
+```{=latex}
+\section*{REFERÊNCIAS}
+\addcontentsline{toc}{section}{REFERÊNCIAS}
+```
+
+Usar a ABNT
+
+::: {.center}
+*Este modelo segue as orientações da Pró-Reitoria de Pesquisa (PROPESQ)*
+:::
