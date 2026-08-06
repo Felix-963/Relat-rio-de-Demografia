@@ -20,6 +20,7 @@ format:
 \thispagestyle{empty}
 \begin{center}
 
+% Remova o símbolo % da linha abaixo se a imagem estiver na mesma pasta:
 \includegraphics[width=2.5cm]{logo_ufpb.png}
 
 \vspace{1cm}
@@ -40,13 +41,13 @@ format:
 
 \textbf{Docente:} Everlane Suane de Araújo da Silva
 
-\textbf{Discente:} Matheus Felix de Assunção -Matrícula: 20230093474
+\textbf{Discente:} Matheus Felix de Assunção - Matrícula: 20230093474
 
 \vfill
 
 \textbf{João Pessoa -- PB}
 
-\textbf{Mês, 2026}
+\textbf{Agosto, 2026}
 
 \end{center}
 \newpage
@@ -59,7 +60,6 @@ format:
 \newpage
 ```
 
- 
 ```{=latex}
 \begin{center}
 \textbf{\large Análise Demográfica do Estado do Maranhão: 2010-2022}
@@ -78,10 +78,7 @@ Matheus Felix de Assunção^[Discente do curso de bacharelado em Estatística da
 \end{flushright}
 ```
 
-```{=latex}
-\section*{RESUMO}
-\addcontentsline{toc}{section}{RESUMO}
-```
+# RESUMO {-}
 
 Apresenta de forma resumida a proposta investigativa descrita **no trabalho.** É elaborado de forma clara e objetiva em um único parágrafo com cerca de 250 a 300 palavras e espaçamento simples.
 
@@ -115,10 +112,7 @@ Exposição e discussão, de forma objetiva, enfatizando os resultados mais rele
 
 Exposição com base nos resultados obtidos, evitando-se a simples repetição do que já foi apresentado nas discussões. Na elaboração desta seção, convém retomar os objetivos de modo a evidenciar se foram ou não alcançados, apresentando os possíveis desdobramentos do estudo.
 
-```{=latex}
-\section*{REFERÊNCIAS}
-\addcontentsline{toc}{section}{REFERÊNCIAS}
-```
+# REFERÊNCIAS {-}
 
 Usar a ABNT
 
