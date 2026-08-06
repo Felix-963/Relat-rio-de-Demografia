@@ -7,6 +7,7 @@ format:
     pdf-engine: pdflatex
     geometry:
       - margin=2.5cm
+    colorlinks: false
     fontsize: 12pt
     number-sections: true
     toc: false
@@ -53,15 +54,29 @@ format:
 
 ```{=latex}
 \thispagestyle{empty}
+\renewcommand{\contentsname}{Sumário}
 \tableofcontents
 \newpage
 ```
 
-# Análise Demográfica do Estado do Maranhão: 2010-2022 {.unnumbered}
+ 
+```{=latex}
+\begin{center}
+\textbf{\large Análise Demográfica do Estado do Maranhão: 2010-2022}
+\end{center}
+```
+
+```{=latex}
+\begin{flushright}
+```
 
 Everlane Suane A. Silva^[Docente do Departamento de Estatística da Universidade Federal da Paraíba (UFPB); Pesquisadora do Laboratório de Estudos Demográficos (LED) do Departamento de Estatística da UFPB.]
 
 Matheus Felix de Assunção^[Discente do curso de bacharelado em Estatística da UFPB.]
+
+```{=latex}
+\end{flushright}
+```
 
 ```{=latex}
 \section*{RESUMO}
